@@ -126,6 +126,8 @@
   border: .1rem solid var(--primary);
   border-radius: 50%;
 
+  vertical-align: middle;
+
   background-color: var(--primary);
 
   transition: var(--transition-duration) var(--transition-function);
