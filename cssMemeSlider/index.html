@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="fonts/Inter-Regular.woff2"
+      as="font"
+      crossorigin
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>CSS Meme Slider</title>
+  </head>
+
+  <body>
+    <main>
+      <section class="slider">
+        <div class="container">
+          <input type="radio" name="radio" id="radio1" checked />
+          <input type="radio" name="radio" id="radio2" />
+          <input type="radio" name="radio" id="radio3" />
+          <input type="radio" name="radio" id="radio4" />
+
+          <div class="slider__slides">
+            <ul class="slider__list">
+              <li class="slider__item">
+                <picture>
+                  <source type="image/webp" srcset="./images/1.webp" />
+                  <img
+                    class="slider__image"
+                    src="./images/1.jpg"
+                    alt="Слайд 1"
+                    loading="lazy"
+                  />
+                </picture>
+              </li>
+              <li class="slider__item">
+                <picture>
+                  <source type="image/webp" srcset="./images/2.webp" />
+                  <img
+                    class="slider__image"
+                    src="./images/2.jpg"
+                    alt="Слайд 2"
+                    loading="lazy"
+                  />
+                </picture>
+              </li>
+              <li class="slider__item">
+                <picture>
+                  <source type="image/webp" srcset="./images/3.webp" />
+                  <img
+                    class="slider__image"
+                    src="./images/3.jpg"
+                    alt="Слайд 3"
+                    loading="lazy"
+                  />
+                </picture>
+              </li>
+              <li class="slider__item">
+                <picture>
+                  <source type="image/webp" srcset="./images/4.webp" />
+                  <img
+                    class="slider__image"
+                    src="./images/4.jpg"
+                    alt="Слайд 4"
+                    loading="lazy"
+                  />
+                </picture>
+              </li>
+            </ul>
+          </div>
+
+          <div class="slider__down">
+            <div class="slider__titles titles">
+              <ul class="titles__list">
+                <li class="titles__item">
+                  A job worth doing is worth doing right.
+                </li>
+                <li class="titles__item">
+                  It’s all about the little things in life
+                </li>
+                <li class="titles__item">
+                  You can’t get something for nothing.
+                </li>
+                <li class="titles__item">One should never give up.</li>
+              </ul>
+            </div>
+            <div class="slider__dots">
+              <label class="slider__label" for="radio1">
+                <span class="slider__dot"></span>
+              </label>
+              <label class="slider__label" for="radio2">
+                <span class="slider__dot"></span>
+              </label>
+              <label class="slider__label" for="radio3">
+                <span class="slider__dot"></span>
+              </label>
+              <label class="slider__label" for="radio4">
+                <span class="slider__dot"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
